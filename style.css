@@ -1,15 +1,41 @@
-.youtube-video-background { background: url(/images/video-bg.jpg) no-repeat #333333; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: -99; }
-.video-box, .video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
-@media (min-aspect-ratio: 16/9) { .video-box { height: 300%; top: -100%; } } @media (max-aspect-ratio: 16/9) { .video-box { width: 300%; left: -100%; } }
-
-
-.nav{
-    background-color: white;
-    width: 100%;
-    height: 100px;
+.youtube-video-background {
+  background: url(/images/video-bg.jpg) no-repeat #333333;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+.video-box,
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-box {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-box {
+    width: 300%;
+    left: -100%;
+  }
 }
 
-.video-background {
+.nav {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+}
+
+/* .video-background {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -31,4 +57,17 @@
     height: auto;
     z-index: -1000;
     transform: translateX(-50%) translateY(-50%);
+} */
+
+.bg-video {
+  /* Фиксируем видеоролик, чтобы он занимал всю площадь страницы
+  от верхнего левого угла */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Определяем, что все другие элементы на странице будут поверх видео */
+  z-index: -100;
+  object-fit: cover;
 }
