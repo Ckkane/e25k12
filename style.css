@@ -1,3 +1,9 @@
+body{
+    background: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
 .youtube-video-background {
   background: url(/images/video-bg.jpg) no-repeat #333333;
   position: fixed;
