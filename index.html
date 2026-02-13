@@ -11,40 +11,55 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="section">
-      <nav
-        class="navbar"
-        style="border-radius: 50px; background-color: white"
-        role="navigation"
-        aria-label="main navigation"
-      >
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <p style="font-weight: 900">e5k12</p>
-          </a>
+    <section style="height: 100vh;">
+      <section class="section">
+        <nav
+          class="navbar"
+          style="border-radius: 50px; background-color: transparent"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <p style="font-weight: 900; color: white">e5k12</p>
+            </a>
 
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item"> Главная </a>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div
+              class="navbar-start"
+              style="
+                display: flex;
+                justify-content: space-around;
+                align-content: center;
+                width: 100%;
+              "
+            >
+              <a class="navbar-item" style="color: white"> Услуги </a>
 
-            <a class="navbar-item"> Портфолио </a>
+              <a class="navbar-item" style="color: white"> Портфолио </a>
 
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link"> Услуги </a>
+              <a class="navbar-item" style="color: white"> Шоу-рум </a>
+
+              <a class="navbar-item" style="color: white"> О Нас </a>
+
+              <a class="navbar-item" style="color: white"> Контакты </a>
+
+              <!-- <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" style="color: white"> Шоу-рум </a>
 
               <div class="navbar-dropdown">
                 <a class="navbar-item"> About </a>
@@ -53,24 +68,25 @@
                 <hr class="navbar-divider" />
                 <a class="navbar-item"> Report an issue </a>
               </div>
+            </div> -->
             </div>
           </div>
-        </div>
-      </nav>
-    </section>
-    <section class="section is-large">
-      <h1 class="title has-text-primary-100 is-size-1">
-        Создаем дизайн интерьеров жилых и коммерческих объектов
-      </h1>
-      <h2 class="subtitle has-text-primary-100">
-        Свяжитесь с нами, чтобы обсудить проект и получить персональное
-        предложение.
-      </h2>
-      <button class="button is-rounded">Рассчитать своимость проекта</button>
-      <button class="button is-rounded">Написать в студию</button>
-      <video autoplay muted loop class="bg-video">
-        <source src="video.mp4" type="video/mp4" />
-      </video>
+        </nav>
+      </section>
+      <section class="section is-large">
+        <h1 class="title has-text-primary-100 is-size-1">
+          Создаем дизайн интерьеров жилых и коммерческих объектов
+        </h1>
+        <h2 class="subtitle has-text-primary-100">
+          Свяжитесь с нами, чтобы обсудить проект и получить персональное
+          предложение.
+        </h2>
+        <button class="button is-rounded">Рассчитать своимость проекта</button>
+        <button class="button is-rounded">Написать в студию</button>
+        <video autoplay muted loop class="bg-video">
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+      </section>
     </section>
     <div style="background-color: #dfdfdf; width: 100%">
       <div class="container">
@@ -240,6 +256,88 @@
             </div>
           </div>
         </section>
+      </div>
+      <div style="background-color: white; width: 100%">
+        <div class="container">
+          <section class="section">
+            <div style="width: 100%; margin: 30px">
+              <h1 class="title has-text-primary-00 is-size-1">
+                Каждый интерьер начинается с диалога
+              </h1>
+              <h2 class="subtitle has-text-primary-00">
+                Заполнинте короткую форму
+              </h2>
+            </div>
+            <div class="content columns is-desktop">
+              <div class="column">
+                <div class="field">
+                  <label class="label">Имя</label>
+                  <p class="control has-icons-left">
+                    <input class="input" placeholder="Имя" />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="field">
+                  <label class="label">Площадь помещения</label>
+                  <p class="control has-icons-left">
+                    <input class="input" placeholder="325" />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock">м²</i>
+                    </span>
+                  </p>
+                </div>
+                <label class="label">Номер телефона</label>
+                <div class="field-body">
+                  <div class="field is-expanded">
+                    <div class="field has-addons">
+                      <p class="control">
+                        <a class="button is-static"> +7 </a>
+                      </p>
+                      <p class="control is-expanded">
+                        <input
+                          class="input"
+                          type="tel"
+                          placeholder="Ваш номер телефона"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="field">
+                  <label class="label">Город объекта</label>
+                  <p class="control has-icons-left">
+                    <input class="input" placeholder="Москва" />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="field">
+                  <label class="label">Тип помещения</label>
+                  <div class="control" style="width: 100%">
+                    <div class="select" style="width: 100%">
+                      <select style="width: 100%">
+                        <option>Новостройка</option>
+                        <option>With options</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div style="margin-top: 40px">
+                  <div class="control">
+                    <button class="button is-rounded">
+                      Рассчитать своимость
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   </body>
