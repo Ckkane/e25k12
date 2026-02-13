@@ -1,7 +1,8 @@
 body{
-    background: url('./background.jpg');
+    background: url('./background2.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-position: top -800px left;
 }
 
 .youtube-video-background {
@@ -52,4 +53,8 @@ body{
   /* Определяем, что все другие элементы на странице будут поверх видео */
   z-index: -100;
   object-fit: cover;
+}
+
+.has-text-primary-00{
+    color: #494848 !important;
 }
