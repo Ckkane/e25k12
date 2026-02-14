@@ -9,9 +9,25 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>E5K12 - Дизайн интерьеров жилых и коммерческих объектов</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <script>
+      window.addEventListener("load", function () {
+
+        setInterval(()=>{
+          document.querySelector(".preloader").style.display = "none";
+        },500)
+      });
+    </script>
   </head>
   <body>
+    <div class="preloader">
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
     <section style="height: 100vh; background-color: #373636d4">
       <section class="section">
         <nav
