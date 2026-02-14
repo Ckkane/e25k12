@@ -14,13 +14,18 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
 
     <script>
       window.addEventListener("load", function () {
-
-        setInterval(()=>{
+        setInterval(() => {
           document.querySelector(".preloader").style.display = "none";
-        },500)
+        }, 500);
       });
     </script>
   </head>
@@ -45,7 +50,7 @@
             style="display: flex; justify-content: space-between; width: 60%"
           >
             <a class="navbar-item" href="https://bulma.io">
-              <p style="font-weight: 900; font-size: 30px; color: white">E5K12</p>
+              <img src="logo.jpg" width="150px" height="200px" alt="" srcset="">
             </a>
 
             <a
@@ -65,15 +70,15 @@
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
               <div style="display: flex" class="anim">
-                <a class="navbar-item" style="color: white"> услуги </a>
+                <a class="navbar-item small-text" style="color: white"> услуги </a>
 
-                <a class="navbar-item" style="color: white"> портфолио </a>
+                <a class="navbar-item small-text" style="color: white"> портфолио </a>
 
-                <a class="navbar-item" style="color: white"> шоу-рум </a>
+                <a class="navbar-item small-text" style="color: white"> шоу-рум </a>
 
-                <a class="navbar-item" style="color: white"> о вас </a>
+                <a class="navbar-item small-text" style="color: white"> о вас </a>
 
-                <a class="navbar-item" style="color: white"> контакты </a>
+                <a class="navbar-item small-text" style="color: white"> контакты </a>
               </div>
 
               <!-- <div class="navbar-item has-dropdown is-hoverable">
@@ -95,12 +100,8 @@
         <h1 class="title has-text-primary-100 is-size-1">
           Создаем дизайн интерьеров жилых и коммерческих объектов
         </h1>
-        <h2 class="subtitle has-text-primary-100">
-          Свяжитесь с нами, чтобы обсудить проект и получить персональное
-          предложение.
-        </h2>
-        <button class="button is-rounded">Рассчитать своимость проекта</button>
-        <button class="button is-rounded">Написать в студию</button>
+        <button class="button is-rounded small-text">Рассчитать своимость проекта</button>
+        <button class="button is-rounded small-text">Консультация</button>
         <!-- <video autoplay muted loop class="bg-video">
           <source src="video.mp4" type="video/mp4" />
         </video> -->
@@ -118,65 +119,11 @@
             "
           >
             <h1 class="title has-text-primary-00 is-size-1">Портфолио</h1>
-            <button class="button is-rounded">Все проекты</button>
+            <button class="button is-rounded small-text">Все проекты</button>
           </div>
         </section>
       </div>
     </div>
-    <section class="section is-small" style="background-color: white">
-      <div class="container">
-        <div class="content columns is-desktop">
-          <div
-            class="column"
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-            "
-          >
-            <h2 class="has-text-primary-00">Почему выбирают нас:</h2>
-            <!-- <p>
-            Curabitur accumsan turpis pharetra
-            <strong>augue tincidunt</strong> blandit. Quisque condimentum
-            maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel
-            cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus
-            lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-          </p> -->
-            <ul class="ul">
-              <li>Индивидуальный подход</li>
-              <li>Чёткие сроки и прозрачный бюджет</li>
-              <li>Реалистичные визуализации</li>
-              <li>Контроль качества на всех этапах</li>
-            </ul>
-          </div>
-          <div
-            class="column"
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-            "
-          >
-            <h2 class="has-text-primary-00">Что мы проектируем:</h2>
-            <!-- <p>
-            Curabitur accumsan turpis pharetra
-            <strong>augue tincidunt</strong> blandit. Quisque condimentum
-            maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel
-            cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus
-            lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-          </p> -->
-            <ul class="ul">
-              <li>Квартиры и апартаменты</li>
-              <li>Частные дома и виллы</li>
-              <li>Коммерческие пространства</li>
-              <li>Офисы и креативные студии</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
     <div>
       <div class="container">
         <section class="section">
@@ -216,9 +163,9 @@
                 <p style="text-align: center; color: white">01</p>
               </div>
               <div>
-                <h2 class="has-text-primary-00">Планировочное решение</h2>
-                <p>2 000 р/м²</p>
-                <button class="button is-rounded">Рассчитать своимость</button>
+                <h2 class="has-text-primary-00 small-text">Планировочное решение</h2>
+                <p class="small-text">2 000 р/м²</p>
+                <button class="button is-rounded small-text">Рассчитать своимость</button>
               </div>
             </div>
             <div
@@ -243,11 +190,11 @@
                 <p style="text-align: center; color: white">02</p>
               </div>
               <div>
-                <h2 class="has-text-primary-00">
+                <h2 class="has-text-primary-00 small-text">
                   Индивидуальный проект интерьера
                 </h2>
-                <p>от 5 000 р/м²</p>
-                <button class="button is-rounded">Рассчитать своимость</button>
+                <p class="small-text">от 5 000 р/м²</p>
+                <button class="button is-rounded small-text">Рассчитать своимость</button>
               </div>
             </div>
             <div
@@ -272,9 +219,9 @@
                 <p style="text-align: center; color: white">03</p>
               </div>
               <div>
-                <h2 class="has-text-primary-00">Авторский надзор</h2>
-                <p>от 5 000 р/м²</p>
-                <button class="button is-rounded">Рассчитать своимость</button>
+                <h2 class="has-text-primary-00 small-text">Авторский надзор</h2>
+                <p class="small-text">от 5 000 р/м²</p>
+                <button class="button is-rounded small-text">Рассчитать своимость</button>
               </div>
             </div>
           </div>
@@ -287,7 +234,7 @@
               <h1 class="title has-text-primary-00 is-size-1">
                 Каждый интерьер начинается с диалога
               </h1>
-              <h2 class="subtitle has-text-primary-00">
+              <h2 class="subtitle has-text-primary-00 small-text">
                 Заполнинте короткую форму
               </h2>
             </div>
@@ -363,7 +310,61 @@
         </div>
       </div>
     </div>
-    <section class="section is-medium" style="background-color: white;">
+    <section class="section is-small" style="background-color: white">
+      <div class="container">
+        <div class="content columns is-desktop">
+          <div
+            class="column"
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <h2 class="has-text-primary-00 small-text">Почему выбирают нас:</h2>
+            <!-- <p>
+            Curabitur accumsan turpis pharetra
+            <strong>augue tincidunt</strong> blandit. Quisque condimentum
+            maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel
+            cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus
+            lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
+          </p> -->
+            <ul class="ul small-text">
+              <li>Индивидуальный подход</li>
+              <li>Чёткие сроки и прозрачный бюджет</li>
+              <li>Реалистичные визуализации</li>
+              <li>Контроль качества на всех этапах</li>
+            </ul>
+          </div>
+          <div
+            class="column"
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <h2 class="has-text-primary-00 small-text">Что мы проектируем:</h2>
+            <!-- <p>
+            Curabitur accumsan turpis pharetra
+            <strong>augue tincidunt</strong> blandit. Quisque condimentum
+            maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel
+            cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus
+            lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
+          </p> -->
+            <ul class="ul small-text">
+              <li>Квартиры и апартаменты</li>
+              <li>Частные дома и виллы</li>
+              <li>Коммерческие пространства</li>
+              <li>Офисы и креативные студии</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section is-medium" style="background-color: white">
       <div class="container">
         <div style="height: 600px"></div>
       </div>

@@ -57,6 +57,7 @@ body{
 
 .has-text-primary-00{
     color: #c5c5c5 !important;
+    font-family: "Google Sans", sans-serif!important;
 }
 
 .ul > li{
@@ -137,4 +138,12 @@ body{
 @keyframes ani {
   0% {opacity: 0; margin-bottom: 200px;}
   100% {opacity: 1;margin-bottom: 0px;}
+}
+
+.label{
+  font-family: "Poiret One", sans-serif!important;
+}
+
+.small-text{
+  font-family: "Poiret One", sans-serif!important;
 }
