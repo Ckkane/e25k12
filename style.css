@@ -120,3 +120,18 @@ body{
   from { transform: translateY(0); opacity: 0.5; }
   to { transform: translateY(-15px); opacity: 1; }
 }
+
+.section {
+  opacity: 0;
+  animation: ani 3.5s forwards;
+}
+
+.anim {
+  opacity: 0;
+  animation: ani 3.5s forwards;
+}
+
+@keyframes ani {
+  0% {opacity: 0; margin-bottom: 200px;}
+  100% {opacity: 1;margin-bottom: 0px;}
+}
