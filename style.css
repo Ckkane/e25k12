@@ -2,6 +2,7 @@ body{
     background: url('./background3.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
+    /* background-attachment: fixed; */
     /* background-position: top -800px left; */
 }
 
