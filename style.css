@@ -56,15 +56,18 @@ body{
 }
 
 .has-text-primary-00{
-    color: #494848 !important;
+    color: #c5c5c5 !important;
 }
 
 .ul > li{
   font-size: 18px;
   font-weight: 600;
-  color: #494848;
+  color: #c5c5c5;
 }
 
+.label {
+  color:#c5c5c5 !important;
+}
 
 /* #spinner{
   position: fixed;
