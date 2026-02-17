@@ -19,17 +19,17 @@ const httpsServer = https.createServer(credentials, app);
 app.use(cors())
 
 // Define a middleware to redirect HTTP to HTTPS
-function ensureSecure(req, res, next) {
-    if (req.secure) {
-        // Request is already secure (HTTPS)
-        return next();
-    }
-    // Redirect to HTTPS version of the URL
-    res.redirect('https://' + req.hostname + req.originalUrl);
-}
+// function ensureSecure(req, res, next) {
+//     if (req.secure) {
+//         // Request is already secure (HTTPS)
+//         return next();
+//     }
+//     // Redirect to HTTPS version of the URL
+//     res.redirect('https://' + req.hostname + req.originalUrl);
+// }
 
 // Use the middleware to enforce HTTPS
-app.use(ensureSecure);
+// app.use(ensureSecure);
 
 app.post("/api/sendForm", jsonParser, function (req, res) {
   if (!req.body) return res.sendStatus(400);
