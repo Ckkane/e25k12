@@ -37,4 +37,4 @@ app.post("/api/sendForm", jsonParser, function (req, res) {
   mail(req.body)
 });
 
-app.listen(443, () => console.log(`Example app listening on port ${port}!`));
+app.listen(443, () => console.log(`Example app listening!`));
