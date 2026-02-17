@@ -22,6 +22,7 @@ async function sent(body) {
     from: `Миша <stathmaj@gmail.com>`,
     to: "stathmaj@gmail.com",
     subject: "Новый заказ",
+    text: "Hello world?", // Plain-text version of the message
     html:`
     <h1>Имя - ${body.name}</h1>
     <br>
@@ -32,7 +33,7 @@ async function sent(body) {
     <h1>Телефон - ${body.phone}
     <br>
     <h1>Тип объекта - ${body.type}
-    `
+    `,
   });
 };
 
