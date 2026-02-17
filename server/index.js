@@ -13,4 +13,4 @@ app.post("/api/sendForm", jsonParser, function (req, res) {
   mail(req.body)
 });
 
-app.listen(80, () => console.log(`Example app listening on port ${8080}!`));
+app.listen(8080, () => console.log(`Example app listening on port ${8080}!`));
