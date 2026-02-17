@@ -1,7 +1,6 @@
 const express = require("express");
 const mail = require('./mail.js')
 const app = express();
-const port = 3000;
 var cors = require('cors')
 
 const jsonParser = express.json();
@@ -14,4 +13,4 @@ app.post("/api/sendForm", jsonParser, function (req, res) {
   mail(req.body)
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(8080, () => console.log(`Example app listening on port ${8080}!`));
