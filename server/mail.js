@@ -18,11 +18,29 @@ async function sent(body) {
 
   // Send emails using the shared transporter.
   // Do NOT create a new transporter for each message - that defeats the purpose of pooling.
-  const info = await transporter.sendMail({
+  const info1 = await transporter.sendMail({
+    from: `Миша <stathmaj@gmail.com>`,
+    to: "Vlbelotserkovets@gmail.com",
+    subject: "Тест",
+    text: "Тест", // Plain-text version of the message
+    html:`
+    <h1>Имя - ${body.name}</h1>
+    <br>
+    <h1>Email - ${body.email}<h1/>
+    <br>
+    <h1>Площадь - ${body.square}<h1/>
+    <br>
+    <h1>Телефон - ${body.phone}
+    <br>
+    <h1>Тип объекта - ${body.type}
+    `,
+  });
+
+  const info2 = await transporter.sendMail({
     from: `Миша <stathmaj@gmail.com>`,
     to: "stathmaj@gmail.com",
-    subject: "Новый заказ",
-    text: "Hello world?", // Plain-text version of the message
+    subject: "Тест",
+    text: "Тест", // Plain-text version of the message
     html:`
     <h1>Имя - ${body.name}</h1>
     <br>
