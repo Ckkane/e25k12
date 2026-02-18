@@ -113,7 +113,7 @@ form.addEventListener("submit", function (e) {
 async function sendForm() {
   let response;
   try {
-    response = await fetch("http://e5k12.ru:3000/api/sendForm", {
+    response = await fetch("/api/sendForm", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
