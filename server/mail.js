@@ -1,7 +1,6 @@
 const nodemailer = require("nodemailer");
 const process = require('process');
-const dotenv = require('dotenv');
-dotenv.config()
+require('dotenv').config()
 
 async function sent(body) {
   // Create ONE transporter instance and reuse it throughout your application.
@@ -17,7 +16,6 @@ async function sent(body) {
   });
 
   console.log(body)
-  console.log(process.env.pw)
 
   // Send emails using the shared transporter.
   // Do NOT create a new transporter for each message - that defeats the purpose of pooling.
