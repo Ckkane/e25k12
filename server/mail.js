@@ -11,7 +11,7 @@ async function sent(body) {
     secure: true,
     auth: {
       user: "stathmaj@gmail.com",
-      pass: "ifsq czbn swai iudv"
+      pass: ""
     },
   });
 
