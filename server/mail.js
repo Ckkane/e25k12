@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
-const process = require('process');
-require('dotenv').config()
+// const process = require('process');
+// require('dotenv').config()
 
 async function sent(body) {
   // Create ONE transporter instance and reuse it throughout your application.
@@ -11,7 +11,7 @@ async function sent(body) {
     secure: true,
     auth: {
       user: "stathmaj@gmail.com",
-      pass: process.env.pw,
+      pass: "ifsq czbn swai iudv"
     },
   });
 
